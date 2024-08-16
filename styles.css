@@ -1,0 +1,72 @@
+:root{
+    scroll-behavior: smooth;
+    transition: all 0.1s;
+}
+
+#container {
+    display: grid;
+    grid-auto-rows: 99vh;
+    grid-template-columns: 15vw repeat(2, 83vw);
+}
+
+#shortcuts {
+    background-color: rgba(255, 255, 255, 0.199);
+    grid-column: 1/2;
+    grid-row-start: 1;
+    border: 1px solid rgb(73, 73, 73);
+    padding: 0%;
+}
+
+#mainPage {
+    background-color: rgba(131, 130, 130, 0.596);
+    grid-column: 2/3;
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: row;
+    height: 12vh;
+    width: 14.9vw;
+    border: 1px outset rgb(73, 73, 73);
+    align-items: center;
+    background-color: rgba(192, 192, 192, 0.836);
+}
+
+#dashboardLogo {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 6vh;
+    width: 4vw;
+    border: 1px solid;
+}
+
+#dashboardText {
+    margin-top: 30px;
+    margin-left: 0px;
+}
+
+p {
+    font-size:1vw;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+img {
+    margin-top: 12px;
+    margin-left: 10px;
+    margin-right: 5px;
+    height: 4vh;
+    width: 2vw;
+}
+
+#shortcutItems {
+    margin-top: 2px;
+}
+
+.listedItems {
+    display: flex;
+    margin-top: 2.5px;
+    border: 1px outset;
+    
+}
