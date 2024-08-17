@@ -2,12 +2,13 @@
     scroll-behavior: smooth;
     transition: all 0.1s;
     border-radius: 1%;
+    overflow: hidden
 }
 
 #container {
     display: grid;
     grid-template-rows: 99vh;
-    grid-template-columns: 15vw 83vw;
+    grid-template-columns: 15vw 85vw;
 }
 
 #shortcuts {
@@ -61,8 +62,8 @@ img {
 }
 
 .listedItems {
+    height: 10vh;
     display: flex;
-    margin-top: 2.5px;
     border: 1px outset;
 }
 
@@ -176,7 +177,6 @@ img {
 }
 
 #content {
-    border: 2px solid red;
-
+    
 }
 
