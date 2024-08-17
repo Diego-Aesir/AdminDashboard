@@ -1,12 +1,13 @@
 :root{
     scroll-behavior: smooth;
     transition: all 0.1s;
+    border-radius: 1%;
 }
 
 #container {
     display: grid;
-    grid-auto-rows: 99vh;
-    grid-template-columns: 15vw repeat(2, 83vw);
+    grid-template-rows: 99vh;
+    grid-template-columns: 15vw 83vw;
 }
 
 #shortcuts {
@@ -17,17 +18,12 @@
     padding: 0%;
 }
 
-#mainPage {
-    background-color: rgba(131, 130, 130, 0.596);
-    grid-column: 2/3;
-}
-
 .dashboard {
     display: flex;
     flex-direction: row;
-    height: 12vh;
+    height: 9.3vh;
     width: 14.9vw;
-    border: 1px outset rgb(73, 73, 73);
+    border: 1px solid rgb(73, 73, 73);
     align-items: center;
     background-color: rgba(192, 192, 192, 0.836);
 }
@@ -68,5 +64,119 @@ img {
     display: flex;
     margin-top: 2.5px;
     border: 1px outset;
-    
 }
+
+.listedItems:hover {
+    background-color: rgba(192, 192, 192, 0.521);
+    border:1px outset #999;
+    box-shadow: inset;
+    -webkit-box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+    -moz-box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+}
+
+#mainPage {
+    display: grid;
+    grid-template-rows: 20vh 79vh;   
+}
+
+#userAction {
+    background-color: rgba(192, 192, 192, 0.836);
+    border: 1px solid rgb(73, 73, 73);
+    border-radius: 1%;
+    display: grid;
+    gap: 30px;
+    grid-template-rows: 5vh 6vh;
+}
+
+#search_div {
+    height: 9vh;
+    display: flex;
+    align-items: center;
+}
+
+#search_div > img {
+    height: 3vh;
+    width: 1.5vw;
+    border: 1px solid;
+    border-radius: 100%;
+    margin-top: 17px;
+}
+
+#search_item {
+    height: 3vh;
+    width: 35vw;
+    border: 1px solid black;
+    border-radius: 5%;
+    margin-top: 13px;
+    margin-left: 10px;
+    margin-right: 30vw;
+    opacity: 0.7;
+}
+
+#userName {
+    margin-top: 4vh;
+    margin-left: 0.2vw;
+    margin-right: 1vw;
+    text-decoration:underline;
+}
+
+#user_actions {
+    display: flex; 
+    height: 10vh;
+    margin-top: 12px;  
+    align-items: center;
+    border-top: 1px solid;
+}
+
+#user_actions > img {
+    height: 3vh;
+    width: 1.5vw;
+    border: 1px solid;
+    border-radius: 100%;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+.user_actions_btn {
+    width: 39vw;
+    display: grid;
+    gap: 2px;
+    grid-template-columns: repeat(3, 120px);
+    justify-content: end;
+}
+
+.user_actions_btn > button {
+    height: 5vh;
+    width: 5vw;
+    background-color: #e0d9d9cb;
+    border: 1px solid white;
+    border-radius: 30%;
+    font-weight: bold;
+}
+
+.user_actions_btn > button:hover {
+    border: 2px solid black;
+    box-shadow: inset;
+    -webkit-box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+    -moz-box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+}
+
+#greetings {
+    width: 40vw;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+#greetings > p {
+    color: rgb(19, 18, 18);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 1vw;
+}
+
+#content {
+    border: 2px solid red;
+
+}
+
