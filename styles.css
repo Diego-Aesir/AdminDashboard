@@ -187,7 +187,66 @@ img {
     grid-row: 1/3;
     height: 78vh;
     width: 64vw;
-    border: 4px solid red
+    border: 4px solid red;
+}
+
+#projects > p {
+    position:relative;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+#main_panel {
+    height: 96%;
+    display: grid;
+    grid-template-columns: repeat(2, 30vw);
+    grid-template-rows: repeat(auto, 100px);
+    gap: 20px;
+    padding-left: 70px;
+    overflow-y: scroll;
+}
+
+#main_panel .projectX {
+    height: 20vh;
+    width: 18vw;
+    display: grid;
+    background-color: rgba(161, 161, 161, 0.164);
+    grid-template-columns: 10px 17vw;
+    grid-template-rows: repeat(5, 50px);
+}
+
+.projectX .colored_item {
+    height: 192px;
+    border-radius: 10%;
+    grid-column: 1/2;
+    background-color: red;
+}
+
+.projectX .header {
+    margin-bottom: 0px;
+}
+
+.projectX .description {
+    height: 5vh;
+    width: 16vw;
+    word-wrap: break-word;
+    margin-left: 30px;
+    overflow-y: scroll;
+}
+
+.projectX .options {
+    height: 6vh;
+    width: 8vw;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 80px;
+    margin-left: 170px;
+}
+
+.projectX .options > img {
+    height: 35px;
+    width: 35px;
 }
 
 #announcements {
@@ -235,13 +294,57 @@ img {
     margin-top: 3px;
 } 
 
-#content #trending {
-
-}
-
 #trending {
     height: 35vh;
     width: 19vw;
     margin-top: 30px;
     border: 2px solid red;
+    overflow: auto;
+}
+
+#trending > p {
+    position:relative;
+    font-size: larger;
+    font-weight: bolder;
+    
+}
+
+#trending > div {
+    height: 110%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(161, 161, 161, 0.164);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-bottom: 10px;
+}
+
+.trending_users {
+    height: 30vh;
+    display: grid;
+    grid-template-columns: 60px 100px;
+    grid-template-rows: repeat(2, auto);
+}
+
+.trending_users > img {
+    margin-top: 30px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    border-radius: 50%;
+    margin-right: 0px;
+}
+
+.trending_user_name {
+    width: 15vw;
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
+
+.trending_user_description {
+    height: auto;
+    width: 13vw;
+    margin-top: 0px;
+    grid-column: 2/2;
+    word-wrap: break-word;
+    overflow-y: scroll;
 }
